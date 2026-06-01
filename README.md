@@ -140,7 +140,12 @@ The completed system was tested through:
 ## Presentation Notes
 
 When asked which code is executed when a user clicks a parcel in the Web GIS, the `fetch('/api/parcels.geojson')` function was initially identified because it retrieves parcel data from the Flask API. However, it was clarified that the `fetch()` function only executes when the Web GIS loads and is responsible for retrieving the GeoJSON dataset. The actual code executed during parcel selection is the `layer.on('click', function(){...})` event handler, which responds to user interaction by highlighting the selected parcel and modifying its display properties. This distinction highlights the difference between data retrieval and event handling in Web GIS applications, where `fetch()` loads spatial data while click events manage user interaction with map features.
+---
+## Google Drive Folder:  
 
+The project files are available in the Google Drive folder below:
+
+### https://drive.google.com/drive/folders/1R0MgTmhTMgVj2naWMeVJn6hE-h7PNDxz?usp=sharing
 ---
 ### Author
 - Audrey Marie Justine A. Reyes
